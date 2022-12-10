@@ -39,6 +39,6 @@ actor VectorProtocol {
     startValue := startValue * (1.00001 ** Float.fromInt(timeElapsedS));
     startTime := currentTime;
     
-  }
+  };
 
-}
+};
