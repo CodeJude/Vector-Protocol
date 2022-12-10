@@ -18,13 +18,11 @@ document.querySelector("form").addEventListener("submit", async function (event)
 
     //Initializing the top up section
     if (document.getElementById("input-amount").value.length != 0) {
-
         await vectorprotocol.topUp(inputAmount);
     }
 
     //Initializing the withdraw section
     if (document.getElementById("withdrawal-amount").value.length != 0) {
-
         await vectorprotocol.withdraw(withdrawAmount);
     }
 
@@ -36,7 +34,6 @@ document.querySelector("form").addEventListener("submit", async function (event)
     document.getElementById("withdrawal-amount").value = "";
 
     button.removeAttribute("disabled")
-
 
 });
 
